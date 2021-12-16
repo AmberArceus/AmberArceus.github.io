@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>   
-<title>Aperture Science</title>
+<title>Aperture Science - sign up</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="Aperture.css">
 <link rel="icon" href="Aperture_Logo.png" type="image/ico">
@@ -22,33 +22,33 @@
 		<ul>
 			<li><a href="index.html">Home</a></li>
 			<li><a href="products.html">Products</a></li>
-			<li><a href="testing.html">Testing Initiative sign-up</a></li>
+			<li><a href="testing.html">Testing Initiative</a></li>
 		</ul>
 	</nav>
 	
 	<div><img src="pics/Triple_Laser.jpeg" width="400" height="225" alt="TRIPLE LAZER test chamber!"></div>
 	
 	<main>
-		<h2>For Science!</h2>
-		<p>
-			<span class="company">Aperture</span> is a company run by robots to do science. You can volunteer to be 
-			a test subject. Tell your friends.
-		</p>
-	
-		<ul>
-		<li>
-			Possible get cyrogenically frozen!
-		</li>
-		<li>
-			Contribute to science!
-		</li>
-		<li>
-			Totally safe!
-		</li>
-		</ul>
-		
+		<h2>Sign Up</h2>
+		<p>* marks required feilds</p>
 		<br>
-		<img src="pics/PortalGun.png" width="132" height="100" alt="handheld quantum tunneling device">
+		
+		<form method="post" action="https://webdevbasics.net/scripts/demo.php">
+			
+			<label for="myName">*Subject Name</label>
+			<input type="text" id="myName" name="myName" required="required">
+			
+			<label for="myAge">*age</label>
+			<input type="number" id="myAge" name="myAge" max="1000" min="1" required="required">
+			
+			<label for="myEMail">E-Mail</label>
+			<input type="email" id="myEMail" name="myEMail">
+			
+			<label for="myComments">Notes</label>
+			<textarea id="myComments" name="myComments" rows="2" cols="30"></textarea>
+			
+			<input type="submit" value="submit">
+		</form>
 		
 		<div id="contact">
 			<br>
